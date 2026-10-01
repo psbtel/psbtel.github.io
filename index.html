@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PS — Anonymous Story Release Sanctuary</title>
+<meta name="description" content="PS is a sanctuary for telling your story anonymously — free from judgment, free to let go." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Lora:ital@0;1&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FDF6F0;
+    --peach: #FBD9C7;
+    --lavender: #E8D5F0;
+    --sky: #D4E4F7;
+    --ink: #3A3440;
+    --ink-soft: #6B6470;
+    --wordmark: #6B4A63;
+    --periwinkle: #C3C9F5;
+    --periwinkle-deep: #8E97E0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--peach) 32%, var(--lavender) 66%, var(--sky) 100%);
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    width: 100%;
+    max-width: 620px;
+    padding: 64px 28px 48px;
+  }
+  .wordmark-wrap {
+    position: relative;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .wordmark {
+    font-family: 'Yellowtail', cursive;
+    font-size: 68px;
+    color: var(--wordmark);
+    line-height: 1;
+  }
+  .wordmark-behind {
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    transform: translateX(calc(-50% + 6px));
+    color: rgba(107, 74, 99, 0.28);
+    z-index: -1;
+  }
+  .tagline {
+    text-align: center;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 56px;
+  }
+  .tagline strong { color: var(--ink); font-weight: 700; }
+  .card em { font-style: italic; color: var(--wordmark); }
+  section { margin-bottom: 40px; }
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+  }
+  p {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    padding: 26px 28px;
+  }
+  .contact-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    padding: 26px 28px;
+    text-align: center;
+  }
+  .contact-card p { margin-bottom: 14px; }
+  .contact-email {
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--periwinkle);
+    border-radius: 999px;
+    padding: 11px 26px;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(142, 151, 224, 0.4);
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 420px) {
+    .wordmark { font-size: 54px; }
+    main { padding: 48px 20px 36px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="wordmark-wrap">
+    <span class="wordmark wordmark-behind" aria-hidden="true">PS</span>
+    <span class="wordmark">PS</span>
+  </div>
+  <p class="tagline">People Sharing Personal Stories...<br /><strong>Anonymously</strong></p>
+
+  <section>
+    <h2>Mission</h2>
+    <div class="card">
+      <p>
+        PS exists so you can tell your story anonymously. You're safe from judgment and free from
+        attack. As you write your truth, something beautiful happens — the weight lifts as you
+        release it into the quiet, and you walk away lighter. No account. No name. No trace. This
+        is not a place to be seen. It's a place to let go, and move forward.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vision</h2>
+    <div class="card">
+      <p>
+        A world where truth doesn't need a name to be heard, and letting go doesn't need
+        permission. PS is building that place — one release at a time. And for the reader,
+        <em>proof: you were never alone.</em> What you're carrying, someone else has carried too.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who We Are</h2>
+    <div class="card">
+      <p>
+        PS is built by B-Telecom LLC, a Texas company. We're currently preparing PS for release
+        on iOS and Android — check back soon for links.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-card">
+    <h2>Get in Touch</h2>
+    <p>Questions, feedback, or a story you'd like removed? We'd like to hear from you.</p>
+    <a class="contact-email" href="mailto:ps.support@btelecomllc.com">ps.support@btelecomllc.com</a>
+  </section>
+
+  <footer>
+    PS is a DBA of B-Telecom LLC.<br />
+    © 2026 B-Telecom LLC. All rights reserved.
+  </footer>
+</main>
+</body>
+</html>
